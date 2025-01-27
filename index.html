@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Password Manager</h2>
+        <div class="input-group">
+            <label>Website</label>
+            <input type="text" id="websiteInput" placeholder="Enter website">
+        </div>
+        <div class="input-group">
+            <label>Username</label>
+            <input type="text" id="usernameInput" placeholder="Enter username">
+        </div>
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" id="passwordInput" placeholder="Enter password">
+        </div>
+        <button onclick="addPassword()">Add Password</button>
+        
+        <table id="passwordTable">
+            <thead>
+                <tr>
+                    <th>Website</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="passwordList"></tbody>
+        </table>
+    </div>
+<script src="script.js"></script>
+    
+</body>
+</html>
